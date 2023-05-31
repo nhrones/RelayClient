@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv='cache-control' content='no-store'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-store'>
+    <!-- Suppress browser request for favicon.ico -->
+    <link rel='shortcut icon' type='image/x-icon' href='data:image/x-icon;,'>
+    <link rel='stylesheet' href='./styles.css'>
+    <script type=module src='./js/main.js'></script>
+    <title>Private Chat</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="header">
+            <pre class='banner' id='banner'></pre>
+        </div>
+        <div class="messages"></div>
+        <div class="footer">
+            <input type="text" id="chatInput" autocomplete="off" placeholder="Your message..">
+            <button id='sendButton'>Send</button>    
+        </div>
+    </div>
+
+    <template data-template="message">
+        <div class="message">
+            <div class="message__name"></div>
+            <div class="message__bubble"></div>
+        </div>
+    </template>
+</body>
+
+</html>

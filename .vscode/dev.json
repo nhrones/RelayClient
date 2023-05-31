@@ -1,0 +1,14 @@
+{
+   "simple": {
+      "TargetFolder": "",
+      "Port": 80
+   },
+   "build": {
+      "Out": "",
+      "FileName": "bundle.js",
+      "Entry": [
+         "./src/main.ts"
+      ],
+      "Minify": false
+   }
+}
